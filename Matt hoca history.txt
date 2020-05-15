@@ -1,0 +1,103 @@
+992  cd linuxlab
+  993  l
+  994  ls -al
+  995  cat alice
+  996  l
+  997  cat wonderland
+  998  l
+  999  ls /bin
+ 1000  less alice
+ 1001  file alice
+ 1002  file wonderland
+ 1003  mspaint.exe wonderland
+ 1004  l
+ 1005  mv alice alice.txt
+ 1006  mv wonderland wonderland.jpg
+ 1007  file dracula
+ 1008  mv dracula dracula.txt
+ 1009  mv holmes holmes.jpg
+ 1010  mv sherlock sherlock.txt
+ 1011  l
+ 1012  mkdir alice sherlock
+ 1013  l
+ 1014  mv alice.txt wonderland.jpg alice/
+ 1015  l
+ 1016  history -10
+ 1017  ls alice
+ 1018  mv sherlock.txt holmes.jpg sherlock/
+ 1019  l
+ 1020  ls -R
+ 1021  tree
+ 1022  ls -alS
+ 1023  ls -alSR
+ 1024  ls -alSRh
+ 1025  ls --help
+ 1026  man ls
+ 1027  ls -u
+ 1028  ls -ul
+ 1029  cd alice
+ 1030  ls -ul
+ 1031  cd ..
+ 1032  ls -t
+ 1033  ls -tl
+ 1034  ls
+ 1035  l
+ 1036  ls -tl
+ 1037  cd ..
+ 1038  ls
+ 1039  ls linuxlab2
+ 1040  cp -R linuxlab linuxlab2
+ 1041  ls linuxlab2
+ 1042  rm -r linuxlab2/linuxlab
+ 1043  ls linuxlab2
+ 1044  cp -R linuxlab/ linuxlab2
+ 1045  ls linuxlab2
+ 1046  rm -r linuxlab2/linuxlab
+ 1047  cp -R linuxlab/* linuxlab2
+ 1048  ls linuxlab2
+ 1049  mkdir mydir
+ 1050  cp linuxlab2 mydir
+ 1051  cd linuxlab2
+ 1052  l
+ 1053  mkdir -p 'Kitaplığım/Edebiyat/Dünya Klasikleri' 'Kitaplığım/Edebiyat/Türk Klasikleri'
+ 1054  tree
+ 1055  tree Kitaplığım
+ 1056  mkdir -p 'Kitaplığım/Edebiyat/Dünya Klasikleri' 'Kitaplığım/Edebiyat/Türk Klasikleri' 'Kitap
+lığım/Yabancı Dil/İspanyolca
+ 1057  mkdir -p 'Kitaplığım/Edebiyat/Dünya Klasikleri' 'Kitaplığım/Edebiyat/Türk Klasikleri' 'Kitap
+lığım/Yabancı Dil/İspanyolca'
+ 1058  tree Kitaplığım
+ 1059  less list.txt
+ 1060  xargs touch <List.txt
+ 1061  ls
+ 1062  cp list.txt Kitaplığım
+ 1063  rm *
+ 1064  l
+ 1065  cd sherlock
+ 1066  ls
+ 1067  echo "Merhaba Matthew\n senin ev dizinin $HOME" > File1.txt
+ 1068  l
+ 1069  cat File1.txt
+ 1070  cp sherlock.txt File1.txt
+ 1071  l
+ 1072  echo "Merhaba Matthew\n senin ev dizinin $HOME" > File1.txt
+ 1073  cat File1.txt
+ 1074  ls
+ 1075  l
+ 1076  cp -i sherlock.txt File1.txt
+ 1077  cp -i sherlock.txt File2.txt
+ 1078  cp -i sherlock.txt File1.txt
+ 1079  ls
+ 1080  l
+ 1081  alias cp="cp -i"
+ 1082  cp sherlock.txt File3.txt
+ 1083  alias gerp=grep
+ 1084  cd ..
+ 1085  l
+ 1086  cd Kitaplığım
+ 1087  l
+ 1088  xargs -d '\n' touch <list.txt
+ 1089  l
+ 1090  explorer..exe .
+ 1091  explorer.exe .
+ 1092  xargs -d '\n' mkdir <list.txt
