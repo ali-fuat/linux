@@ -1,0 +1,65 @@
+Linux Plus - 4/7/2020
+
+ls -l | tee file.txt      #lists file information into file.txt and displays on the screen
+
+cat file.txt | grep 15    #lists files that only contains "15"
+
+ls-l | cut -d' ' -f3      #lists only 3rd column of file information.
+
+ls-l | tee save.txt | cut -d' ' -f3     #lists file information into save.txt and displays 3rd column on the screen
+
+cat file.txt | tr 'ek' 'kl'   #replaces all "e"s with "k" and "k"s with "l" and displays result on the screen.
+
+cat file.txt | tr ' ' ',' | tee file.csv  #replaces all " "s with ","  and displays result on the screen and saves to file.csv. (Basicaly converts file into csv format)
+
+wc file.txt   	#displays count of lines, words and character in file.txt
+
+ls-l | cut -d' ' -f3 | wc -c   #displays character count of the 3rd line of file list
+
+cat table.csv | uniq     #displays uniq lines from table.txt
+
+cat table.csv | cut -d',' -f3 | uniq    #displays uniq values from the 3rd lin of table.txt
+
+comm a.txt b.txt    #displays common and different values in a.txt and b.txt
+diff a.txt b.txt	#displays only different values
+
+Excercise Solution:
+1. cat > countries.csv
+Country,Capital,Continent
+USA,Washington,North America
+France,Paris,Europe
+Canada,Ottawa,North America
+Germany,Berlin,Europe
+2. cut -d',' -f3 countries.csv | tail -4 | sort | uniq | tee continents.txt
+3. cat continents.txt
+
+cat a.txt; cat b.txt   #display content of a.txt and b.txt
+
+
+sleep 20 &         #does not wait 20 seconds, sends command to background and makes terminal available. When execution completes it will show the result.
+
+cd abc && ls       #try to go to abc folder and if it succeeds it will run ls also
+
+cd abc || ls      #try to go to abc, if it fails run ls
+
+cd abd && echo "I am in abd" || echo "No abd folder"   
+
+echo I can use \* as wildcard       #it does not interpret *
+
+cd \
+>abc                 #equal to "cd abc"
+
+
+Soluton 2
+1. ls clarusway.txt && cat clarusway.txt || echo Too early\!
+2. cat > clarusway.txt
+Congratulations!
+3. ls clarusway.txt && cat clarusway.txt || echo Too early\!
+
+
+
+
+
+
+
+
